@@ -1,26 +1,37 @@
 public class Main {
     public static void main(String[] args) {
-        int contador = 0;
-        // laço de repetição
-        while(contador < 10){
-            System.out.println("Contador = " + contador);
-            // incremento
-            contador = contador + 1;
-        }
+        // Aula introdutória de Orientação à Objetos
 
-        // laço para faça
-        for(int x=0; x < 10; x++){
-            System.out.println("Contador = " + x);
-        }
+        // Declaração de objeto
+        Pessoa adao;
 
-        // laço faça enquanto
-        int cont = 1;
-        do{
-            // processo
-            System.out.println(cont);
-            // incremento
-            cont++;
-        }while(cont <= 10);
+        // Instanciação do objeto
+        adao = new Pessoa();
+
+        // Ao mesmo tempo
+        Pessoa qualquer = new Pessoa();
+
+        // Definir formato do objeto
+        qualquer.nome = "Rita";
+        qualquer.sobrenome = "Lee";
+        qualquer.falar();
+        System.out.println(qualquer.falar("oi"));
+
+        //declarar objeto
+        Pessoa rainha;
+
+        //instansciar objeto
+        rainha = new Pessoa();
+
+        //definir forma do objeto
+        rainha.nome = "Tina";
+        rainha.sobrenome = "tunner";
+
+        //definição do comportamento
+        rainha.falar();
+        rainha.comer();
+
 
     }
+
 }
